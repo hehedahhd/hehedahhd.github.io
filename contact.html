@@ -83,7 +83,7 @@
 								<textarea name="form-message" id="form-message" cols="30" rows="10" class="materialize-textarea" placeholder="反馈内容" required></textarea>
 							</div>
 							<div class="form-group">
-								<button class="btn button-default" type="submit" onclick="post('http://m.zy13815040.icoc.me/ajax/msgBoard_h.jsp',{"reqName":"反馈","reqEmail":"","prop0":"zdy1","reqContent":"zdy2","memberId":0})" id="submit" name="submit">发送反馈</button>
+								<button class="btn button-default" type="submit" id="submit" name="submit">发送反馈</button>
 							</div>
 						</form>
 					</div>
@@ -118,23 +118,6 @@
 	<script src="js/fakeLoader.min.js"></script>
 	<script src="js/contact-form.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		function post(URL, PARAMS) {      
-    var temp = document.createElement("form");      
-    temp.action = URL;      
-    temp.method = "post";      
-    temp.style.display = "none";      
-    for (var x in PARAMS) {      
-        var opt = document.createElement("textarea");      
-        opt.name = x;      
-        opt.value = PARAMS[x];      
-        // alert(opt.name)      
-        temp.appendChild(opt);      
-    }      
-    document.body.appendChild(temp);      
-    temp.submit();      
-    alert("已反馈");      
-}
-	</script>
+	
 </body>
 </html>
