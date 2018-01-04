@@ -23,18 +23,19 @@ Ajax Contact Form
 
         // get the form data
         var formData = {
-            'name' : $('input[name="form-name"]').val(),
-            'email' : $('input[name="form-email"]').val(),
-            'subject' : $('input[name="form-subject"]').val(),
-            'message' : $('textarea[name="form-message"]').val()
+            'reqName' : $('input[name="form-name"]').val(),
+            'reqEmail' : '',
+            'prop0' : $('input[name="form-email"]').val(),
+            'reqContent' : $('textarea[name="form-message"]').val(),
+            'memberId': 0
         };
 
         // process the form
         $.ajax({
             type : 'POST',
-            url  : 'send-mail.php',
+            url  : 'http://m.zy13815040.icoc.me/ajax/msgBoard_h.jsp',
             data : formData,
-            dataType : 'json',
+            dataType : 'form',
             encode : true
         }).done(function (data) {
             // handle errors
