@@ -23,12 +23,18 @@ Ajax Contact Form
 
         // get the form data
         var formData = {
+                moduleId: 7,
+                validateCode: null,
+                cmd: "add",
+                _TOKEN: undefined,
+                msgBdData: {
             'reqName' : $('input[name="form-name"]').val(),
             'reqEmail' : '',
             'prop0' : $('input[name="form-email"]').val(),
             'reqContent' : $('textarea[name="form-message"]').val(),
             'memberId': 0
-        };
+        }
+              };
 
         // process the form
         $.ajax({
