@@ -35,7 +35,7 @@ Ajax Contact Form
             type : 'POST',
             url  : 'http://m.zy13815040.icoc.me/ajax/msgBoard_h.jsp',
             data : formData,
-            dataType : 'form',
+            dataType : 'text',
             encode : true
         }).done(function (data) {
             // handle errors
