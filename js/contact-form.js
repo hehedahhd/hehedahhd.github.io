@@ -27,13 +27,7 @@ Ajax Contact Form
                 validateCode: null,
                 cmd: "add",
                 _TOKEN: undefined,
-                msgBdData: {
-            'reqName' : $('input[name="form-name"]').val(),
-            'reqEmail' : '',
-            'prop0' : $('input[name="form-email"]').val(),
-            'reqContent' : $('textarea[name="form-message"]').val(),
-            'memberId': 0
-        }
+                msgBdData: "{\"reqName\":\"" + $('input[name="form-name"]').val() + "\",\"reqEmail\":\"\",\"prop0\":\"" + $('input[name="form-email"]').val() + "\",\"reqContent\":\"" + $('textarea[name="form-message"]').val() + "\",\"memberId\":0}"
               };
 
         // process the form
