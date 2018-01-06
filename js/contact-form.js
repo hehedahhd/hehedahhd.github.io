@@ -27,13 +27,13 @@ Ajax Contact Form
                 validateCode: null,
                 cmd: "add",
                 _TOKEN: undefined,
-                msgBdData: encodeURI("{\"reqName\":\"" + $('input[name="form-name"]').val() + "\",\"reqEmail\":\"\",\"prop0\":\"" + $('input[name="form-email"]').val() + "\",\"reqContent\":\"" + $('textarea[name="form-message"]').val() + "\",\"memberId\":0}")
+                msgBdData: "{\"reqName\":\"" + encodeURI($('input[name="form-name"]').val()) + "\",\"reqEmail\":\"\",\"prop0\":\"" + encodeURI($('input[name="form-email"]').val()) + "\",\"reqContent\":\"" + encodeURI($('textarea[name="form-message"]').val()) + "\",\"memberId\":0}"
               };
 
         // process the form
         $.ajax({
             type : 'POST',
-            url  : 'https://m.zy13815040.icoc.me/ajax/msgBoard_h.jsp',
+            url  : 'http://m.zy13815040.icoc.me/ajax/msgBoard_h.jsp',
             data : formData,
             dataType : 'form',
             encode : true
