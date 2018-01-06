@@ -80,12 +80,12 @@
 						<div class="blog-content">
 							<img src="img/fstart.jpeg" alt="">
 							<div class="blog-detailt">
-								<h5><a href="article/FStart-Guide.html">F-Start使用向导</a></h5>
+								<h5><a>F-Start使用向导</a></h5>
 								<div class="date">
 									<span><i class="fa fa-calendar"></i>2018.1.4</span>
 								</div>
 								<p>在这里学习如何使用F-Start脚本。此向导适合小白阅读，大佬请绕道。</p>
-				<button onclick="javascript:top.location='article/FStart-Guide.html';" class="btn button-default">进入阅读</button>
+				<button onclick="openurl('article/FStart-Guide.html')" class="btn button-default">进入阅读</button>
 							</div>
 						</div>
 					</div>
@@ -122,6 +122,11 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/fakeLoader.min.js"></script>
     <script src="js/main.js"></script>
+		<script>
+			function	openurl(url){
+				window.open(url)
+			}
+		</script>
 </body>
 
 </html>
