@@ -33,7 +33,7 @@ Ajax Contact Form
         // process the form
         $.ajax({
             type : 'POST',
-            url  : 'http://m.zy13815040.icoc.me/ajax/msgBoard_h.jsp',
+            url  : 'https://m.zy13815040.icoc.me/ajax/msgBoard_h.jsp',
             data : formData,
             dataType : 'form',
             encode : true
