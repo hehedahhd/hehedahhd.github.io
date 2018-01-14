@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hhdº - 动态</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="HandheldFriendly" content="True">
+<style>
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+ * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ .Message {
+  display: table;
+  position: relative;
+  margin: 40px auto 0;
+  width: 500px;
+  background-color: #0074d9;
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+ .Message.is-hidden {
+  opacity: 0;
+  height: 0;
+  font-size: 0;
+  padding: 0;
+  margin: 0 auto;
+  display: block;
+}
+ .Message--orange {
+  background-color: #f39c12;
+}
+ .Message--red {
+  background-color: #ff4136;
+}
+ .Message--green {
+  background-color: #2ecc40;
+}
+ .Message--gray {
+  background-color: #bab6bb;
+}
+ .Message-icon {
+  display: table-cell;
+  vertical-align: middle;
+  width: 60px;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+ .Message-icon > i {
+  width: 20px;
+  font-size: 20px;
+}
+ .Message-body {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px 20px 30px 10px;
+}
+ .Message-body > p {
+  line-height: 1.2;
+  margin-top: 6px;
+}
+ .Message-button {
+  position: relative;
+  margin: 15px 5px -10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: 'Source Sans Pro';
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+ .Message-button:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+ .Message-button:active {
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0px rgba(0, 0, 0, 0.4);
+  top: 3px;
+}
+ .Message-close {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  right: 5px;
+  top: 5px;
+  opacity: 0;
+  cursor: pointer;
+}
+ .Message:hover .Message-close {
+  opacity: 1;
+}
+ .Message-close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+ .u-italic {
+  font-style: italic;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+ margin:0;
+ padding:0;
+ border:0;
+ font-size:100%;
+ font:inherit;
+ vertical-align:baseline
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+ display:block
+}
+body{
+ line-height:1
+}
+ol,ul{
+ list-style:none
+}
+blockquote,q{
+ quotes:none
+}
+blockquote:before,blockquote:after,q:before,q:after{
+ content:'';
+ content:none
+}
+table{
+ border-collapse:collapse;
+ border-spacing:0
+}
+</style>
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/materialize.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/normalize.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/owl.carousel.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/owl.theme.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/owl.transitions.css">
+    <link rel="stylesheet" href="https://hehedahhd.github.io/css/fakeLoader.css">
+	<link rel="stylesheet" href="https://hehedahhd.github.io/css/style.css">
+    <link rel="shortcut icon" href="https://hehedahhd.github.io/img/favicon.png">
+</head>
+
+<body>
+    <div class="navbar-top">
+        <div class="site-brand">
+            <a href="https://hehedahhd.github.io/index.html">
+                <h1>
+                    <span>H</span>hdº
+                </h1>
+            </a>
+        </div>
+    </div>
+	<div class="pages section">
+		<div class="container">
+<div class="pages-head">
+				<h3>动态</h3>
+			</div>
+			<div class="Message Message--gray">
+	<div class="Message-icon">
+		<i>2018.1.14 10:14</i>
+	</div>
+	<div class="Message-body">
+		<i>以后会在这里聊聊生活中遇到的趣事</i>
+	</div>
+</div>
+			</div>
+		</div>
+    <div id="fakeLoader"></div>
+    <div class="footer">
+        <div class="container">
+            <div class="about-us-foot">
+                <h6>
+                    <span>H</span>hdº
+                </h6>
+                <p>真理惟一可靠的标准就是永远自相符合。 —— 欧文</p>
+            </div>
+            <div class="copyright">
+                <span>© 2018 All Rights Reserved</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://hehedahhd.github.io/js/jquery.min.js"></script>
+    <script src="https://hehedahhd.github.io/js/materialize.min.js"></script>
+    <script src="https://hehedahhd.github.io/js/owl.carousel.min.js"></script>
+    <script src="https://hehedahhd.github.io/js/fakeLoader.min.js"></script>
+    <script src="https://hehedahhd.github.io/js/main.js"></script>
+</body>
+
+</html>
