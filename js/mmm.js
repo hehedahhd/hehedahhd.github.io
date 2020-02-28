@@ -151,7 +151,7 @@ if (isSurge) {
   }
 }
 
-$httpClient.get({
+$httpClient.post({
   url: "https://mars.sharedaka.com/api/v1/habit/note/create",
   header: {
     "Content-Type": "application/x-www-form-urlencoded",
