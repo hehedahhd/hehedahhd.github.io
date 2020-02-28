@@ -34,7 +34,8 @@ $httpClient.post({
     fromOpenId: null,
     inviteType: null,
     sessionId: 1582817077972
-  }`,
+  }`
+},
   function(error, response, data) {
     if (error) {
       console.log(error);
